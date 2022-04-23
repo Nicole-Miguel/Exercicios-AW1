@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+    <head>
+        <meta charset="utf-8"/>
+        <title>Formulário completo</title>
+    </head>
+    <body>
+        <form action="http://www.example.com/login.php">
+           <fieldset id="identificacao">
+               <legend>Identificação do Usuário</legend>
+                <p> 
+                    <label for="nome_id">Nome*:</label>
+                   <input type="text" name="nome" id="nome_id" maxlength="60" required size="20"/> 
+                </p>
+                <p> 
+                    <label for="senha_id">Senha*:</label>
+                    <input type="password" name="senha" id="senha_id" maxlength="8" required size="20"/> 
+                </p>
+                <p> 
+                    <label for="cpf_id">CPF*:</label>
+                   <input type="text" name="cpf" id="cpf_id" maxlength="14" required size="20" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o cpf no formato xxx.xxx.xxx-xx"/>
+                </p>
+                <p> 
+                    <label for="sexo_id">Sexo*</label>
+                    <br>
+                    <input type="radio" name="sexo" id="feminino">
+                    <label for="feminino">Feminino</label>
+                    <br>
+                    <input type="radio" name="sexo" id="masculino">
+                    <label for="masculino">Masculino</label>
+                </p>
+                <p> 
+                    <label for="data_nasc_id">Data de Nascimento*:</label>
+                    <input type="date" name="data nascimento" id="data_nasc_id" size="20"/>
+                </p>
+                <p> 
+                    <label for="estado_civil_id">Estado Cívil*:</label>
+                    <select name="estado_civil" id="estado_civil_id" required> 
+                        <option value="Solteiro">Solteiro(a)</option>
+                        <option value="Casado">Casado(a)</option>
+                        <option value="Separado">Separado(a)</option>
+                        <option value="Divorciado">Divorciado(a)</option>
+                        <option value="Viuvo">Viúvo(a)</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="escolaridade_id">Escolaridade:</label>
+                    <input type="text" name="escolaridade" id="escolaridade_id" size="20"/>
+                </p>
+                <p>
+                    <label for="ocupacao_principal_id">Ocupação Principal:</label>
+                    <input type="text" name="ocupacao_principal" id="ocupacao_principal_id" size="20"/>
+                </p>
+                <p>
+                    <label for="renda_mensal_id">Renda Mensal:</label>
+                    <input type="text" name="renda_mensal" id="renda_mensal_id" size="20"/>
+                </p>
+                <p>
+                    <label for="numero_dependentes_id">Número de dependentes:</label>
+                    <input type="number" name="numero_dependentes" id="numero_dependentes_id" size="20"/> 
+                </p>
+                <p>
+                    <label for="telefone_id">Telefone*:</label>
+                    <input type="tel" name="telefone" id="telefone_id" size="20" required/>
+                </p>
+                <p>
+                    <label for="email_id">E-mail*:</label>
+                    <input type="email" name="email" id="email_id" size="20" required/>
+                </p>
+            </fieldset>
+            <fieldset id="localizacao">
+                <legend> Localização </legend>
+                <p>
+                    <label for="estado_id">Estado*:</label>
+                    <input type="text" name="estado" id="estado_id" size="20" required/>
+                </p>
+                <p>
+                    <label for="cidade_id">Cidade*:</label>
+                    <input type="text" name="cidade" id="cidade_id" size="20" required/>
+                </p>
+            </fieldset>
+            <fieldset id="mensagem_usuario">
+                <legend> Mensagem do Usuário </legend>
+                <p>
+                    <label for="grau_urgencia_id">Grau de Urgência: </label>
+                    <select name="grau_urgencia" id="grau_urgencia_id">
+                        <option value="M.U"> Muito Urgente </option>
+                        <option value="U"> Urgente </option>
+                        <option value="P.U"> Pouco Urgente </option>
+                        <option value="N.U"> Não Urgente </option>
+                    </select>
+                </p>
+                <p>
+                    <label for="mensagem_id"> Mensagem*:</label>
+                    <textarea name="mensagem" id="mensagem_id" maxlength="500" required></textarea>
+                </p>
+                <p>Reportar Erro</p>
+                <input type="file" name="user-erro"/>
+                <input type="submit" value="Upload"/>
+            </fieldset>
+            <p>
+                <input type="submit" id="botao_enviar" value="Enviar"/>
+                <input type="reset" id="botao_apagar" value="Apagar"/>
+                <br>
+                <p>*Preenchimento obrigatório</p>
+                <hr>
+            </p>
+        </form>
+    </body>
+</html>
