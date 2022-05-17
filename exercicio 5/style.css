@@ -1,0 +1,14 @@
+body {
+    font-family: arial, verdana, sans-serif;
+    background-color: bisque; 
+    text-align: center;
+}
+h1 {
+    text-transform: uppercase;
+}
+p {
+    font-style: oblique;
+}
+#para1 {
+    color:red;
+}
