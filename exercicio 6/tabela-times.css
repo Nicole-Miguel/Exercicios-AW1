@@ -1,0 +1,37 @@
+table {
+    border:  5px solid green;
+    border-collapse: collapse;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    background-image: linear-gradient(#ffffff 50%, #a8e4a8);
+}
+
+img {
+    align-items: right;
+    padding: 2px;
+    height: 25px;
+    width: 30px;
+}
+
+th,td {
+    border: 1px solid green;
+    padding: 2px;
+}
+
+p {
+    text-align: center;
+    color: green;
+    background-color: yellow;
+    width: 500px;
+}
+
+th {
+    color: black;
+    background-color: white;
+}
+
+tr:hover{
+    color: green;
+    background-color: yellow;
+}
