@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+    <head>
+        <meta charset="utf-8"/>
+        <title>CSS </title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: row;
+                margin: 0;
+            }
+
+            .col-1 {
+                background: #f2690d;
+                flex: 1;
+            }
+
+            .col-2 {
+                display: flex;
+                flex-direction: column;
+                flex: 5;
+            }
+
+            .content {
+                background: #f2690d;
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+            }
+
+            .content > article {
+                background: #653078;
+                flex: 3;
+                min-height: 60vh;
+            }
+
+            header, footer {
+                background: #1b9a96;
+                height: 20vh;
+            }
+
+            header, footer, article, nav {
+                padding: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="col-1"> 
+          <nav>
+            <h3> Navegação</h3>
+          </nav>
+        </div>
+       
+        <div class="col-2">
+            <header>
+              <h3>Cabeçalho</h3>
+            </header>
+            <div class="content"> 
+                <article>
+                 <h3>Conteúdo</h3>
+                </article>
+                <h3>Barra Lateral</h3>
+            </div>  
+            <footer>
+                <h3> Rodapé</h3>
+            </footer>
+        </div>
+    </body>
+</html>

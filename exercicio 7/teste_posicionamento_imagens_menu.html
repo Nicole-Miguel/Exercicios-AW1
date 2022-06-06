@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+    <head>
+        <meta charset="utf-8"/>
+        <title>Alguns testes de posicionamento</title>
+        <style>
+            * {
+                box-sizing: content-box;
+            }
+
+            body {
+                background:url("https://media.istockphoto.com/photos/pastel-colored-light-blue-backgrounds-picture-id1334563669?k=20&m=1334563669&s=612x612&w=0&h=uBqhK8ETiWQsYMmObllkbqK4YnFhK_kuINXCjqANj_s=") repeat;
+            }
+
+            .div {
+                width: 150px;
+                height: 150px;
+                padding: 20px;
+                margin: 10px;
+                border: solid 5px;
+            }
+
+            #container div {
+                width: 150px;
+                height: 150px;
+                border: 4px;
+                border-style: solid;
+                border-color: #d00124;
+                position: static;
+            }
+
+            #container .div2 {
+                width: 150px;
+                height: 150px;
+                border: 4px;
+                border-style: solid;
+                border-color: #d00124;
+                position: relative;
+                left: 150px;
+            }
+
+            #jardim {
+                position: absolute;
+                width: 150px;
+                height: 90px;
+                left: 80px;
+                top: 900px;
+                z-index: 0;
+            }
+
+            #praia {
+                position: absolute;
+                width: 150px;
+                height: 90px;
+                left: 80px;
+                top: 1200px;
+                z-index: -1;
+            }
+
+            .dropbtn {
+                background-color: #a268e8;
+                color: black;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown:hover .dropbtn {
+                background-color: #a268e8;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Dropdown Menu</h2>
+        <p>Mova o mouse em cima de "Dropdown" para o menu ser exibido.</p>
+      
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#container">Link 1</a>
+                <a href="#jardim">Link 2</a>
+                <a href="#praia">Link 3</a>
+            </div>
+        </div>
+
+        <div class="div">
+            Hello
+        </div> 
+        
+        <div id="container"> 
+            <div class="div1">Div 1</div>
+            <div class="div2">Div 2</div>
+            <div class="div3">Div 3</div>
+        </div>
+      
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when 
+        an unknown printer took a galley of type and scrambled it to make a type specimen 
+        book. It has survived not only five centuries, but also the leap into electronic 
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+        the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+        with desktop publishing software like Aldus PageMaker including versions of Lorem 
+        Ipsum.</p>
+      
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when 
+        an unknown printer took a galley of type and scrambled it to make a type specimen 
+        book. It has survived not only five centuries, but also the leap into electronic 
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+        the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+        with desktop publishing software like Aldus PageMaker including versions of Lorem 
+        Ipsum.</p>
+      
+        <img id="jardim" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGVExeYXwdcW_v4oXHg1CaykCH2_iYTjUxA4VQieTJjOZkXg1GFma- GdnV6T7qBmgw7M0&usqp=CAU" alt="Jardim" >
+      
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when 
+        an unknown printer took a galley of type and scrambled it to make a type specimen 
+        book. It has survived not only five centuries, but also the leap into electronic 
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+        the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+        with desktop publishing software like Aldus PageMaker including versions of Lorem 
+        Ipsum.</p>
+      
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when 
+        an unknown printer took a galley of type and scrambled it to make a type specimen 
+        book. It has survived not only five centuries, but also the leap into electronic 
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+        the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+        with desktop publishing software like Aldus PageMaker including versions of Lorem 
+        Ipsum.</p>
+      
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when 
+        an unknown printer took a galley of type and scrambled it to make a type specimen 
+        book. It has survived not only five centuries, but also the leap into electronic 
+        typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+        the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+        with desktop publishing software like Aldus PageMaker including versions of Lorem 
+        Ipsum.</p>
+      
+        <img id="praia" src="https://magazine.zarpo.com.br/wp-content/uploads/2022/01/Praia-Vermelha_Zarpo.jpg" alt="Praia">
+    </body>
+</html>
