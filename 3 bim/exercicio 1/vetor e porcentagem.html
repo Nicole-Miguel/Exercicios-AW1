@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aula de JS</title>
+    </head>
+    <body>
+        <h1>Vetor de números inteiros</h1>
+        <script>
+            var numerosInteiros = [];
+            var n = 0;
+            var x = 0;
+    
+            for (var i=0; i<30; i++) {
+                numerosInteiros[i] = Math.floor(Math.random() * 15);
+                if(numerosInteiros[i] < 8) {
+                    n++;
+                } else if(numerosInteiros[i] > 10) {
+                    x++;
+                }
+            }
+
+            document.write("Vetor de números inteiros: <br>" + numerosInteiros);
+            document.write("<br> Porcentagem de números menores que 8: <br>" + ((n*100)/30).toFixed(2) + "%");
+            document.write("<br> Porcentagem de números maiores que 10: <br>" + ((x*100)/30).toFixed(2) + "%");
+        </script>
+    </body>
+</html>

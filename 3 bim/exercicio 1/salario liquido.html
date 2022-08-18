@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aula de JS</title>
+    </head>
+    <body>
+        <h1>Cálculo de Salário Líquido</h1>
+        <script>
+            var nome = "José da Silva"
+            var salarioBruto = 1000;
+            var desconto1 = salarioBruto * 0.085;
+            var desconto2 = (salarioBruto - desconto1) * 0.125;
+            var salarioLiquido = salarioBruto - (desconto1 + desconto2);
+
+            document.write("Nome: " + nome + "<br>");
+            document.write("Salário Bruto: R$ " + salarioBruto + "<br>");
+            document.write("Salário Líquido: R$ " + salarioLiquido + " (Desconto INSS: R$ " + desconto1 + " e Desconto IRRF: <R1></R1> " + desconto2)
+        </script>
+    </body>
+</html>
