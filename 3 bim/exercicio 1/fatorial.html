@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aula de JS</title>
+    </head>
+    <body>
+        <h1>Fatorial de um número natural</h1>
+        <script>
+            var n = Math.floor(Math.random() * 10);
+            var fatorial = n;
+
+            for(var i = 1; i < n; i++) {
+                fatorial = fatorial * i;
+            }
+            document.write("Número natural: " + n);
+            document.write("<br> Fatorial dele: " + fatorial);
+        </script>
+    </body>
+</html>
