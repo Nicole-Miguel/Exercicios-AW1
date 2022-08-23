@@ -11,7 +11,7 @@
         <form>
             <p>
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome">
+                <input type="text" name="nome" id="nome">
             </p>
             <p>
                 <label for="sexo">Sexo</label>
@@ -22,10 +22,10 @@
             </p>
             <p>
                 <label for="altura">Altura:</label>
-                <input type="text" name="altura">
+                <input type="text" name="altura" id="altura">
             </p>
-            <button type="submit" id="calcularPeso">Calcular Peso Ideal</button>
-            <button type="submit" id="limparCampos">Limpar Campos</button>
+            <button type="button" onclick="calcularPeso()" id="btnCalcularPeso">Calcular Peso Ideal</button>
+            <button type="button" onclick="limparCampos()" id="btnLimpar">Limpar Campos</button>
         </form>
     </body>
 
